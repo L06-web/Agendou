@@ -1,0 +1,74 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+}
+.sidebar {
+    transition: all 0.3s;
+}
+.sidebar-collapsed {
+    width: 70px;
+}
+.sidebar-collapsed .sidebar-text {
+    display: none;
+}
+.sidebar-collapsed .logo-text {
+    display: none;
+}
+.sidebar-collapsed .nav-item {
+    justify-content: center;
+}
+.content-area {
+    transition: all 0.3s;
+}
+.content-expanded {
+    margin-left: 250px;
+}
+.content-collapsed {
+    margin-left: 70px;
+}
+.fc-event {
+    cursor: pointer;
+}
+.status-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+}
+.status-confirmed {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+.status-pending {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+.status-canceled {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+.status-completed {
+    background-color: #E0F2FE;
+    color: #075985;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        z-index: 1000;
+        height: 100vh;
+    }
+    .content-area {
+        margin-left: 0 !important;
+    }
+    .sidebar-mobile-hidden {
+        transform: translateX(-100%);
+    }
+    .sidebar-mobile-visible {
+        transform: translateX(0);
+    }
+    .stat-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
